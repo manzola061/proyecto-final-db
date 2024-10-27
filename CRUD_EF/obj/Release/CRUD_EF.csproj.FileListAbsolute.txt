@@ -1,0 +1,16 @@
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\bin\Release\CRUD_EF.exe.config
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\bin\Release\CRUD_EF.exe
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\bin\Release\CRUD_EF.pdb
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\bin\Release\EntityFramework.dll
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\bin\Release\EntityFramework.SqlServer.dll
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\bin\Release\EntityFramework.xml
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\bin\Release\EntityFramework.SqlServer.xml
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Release\CRUD_EF.csproj.AssemblyReference.cache
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Release\CRUD_EF.Form1.resources
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Release\CRUD_EF.Form2.resources
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Release\CRUD_EF.Properties.Resources.resources
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Release\CRUD_EF.csproj.GenerateResource.cache
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Release\CRUD_EF.csproj.CoreCompileInputs.cache
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Release\CRUD_EF.csproj.CopyComplete
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Release\CRUD_EF.exe
+D:\Downloads\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Release\CRUD_EF.pdb

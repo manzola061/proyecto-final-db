@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModeloBaseProyectoFinalStoreContainer" CdmEntityContainer="BaseProyectoFinalEntitiesConexion">
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="ModeloBaseProyectoFinal.Clientes">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="Cedula_Cliente" ColumnName="Cedula_Cliente" />
+          <ScalarProperty Name="Nombre_Cliente" ColumnName="Nombre_Cliente" />
+          <ScalarProperty Name="Direccion_Cliente" ColumnName="Direccion_Cliente" />
+          <ScalarProperty Name="Telefono_Cliente" ColumnName="Telefono_Cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Compras">
+      <EntityTypeMapping TypeName="ModeloBaseProyectoFinal.Compras">
+        <MappingFragment StoreEntitySet="Compras">
+          <ScalarProperty Name="ID_Compra" ColumnName="ID_Compra" />
+          <ScalarProperty Name="Cedula_Cliente" ColumnName="Cedula_Cliente" />
+          <ScalarProperty Name="Fecha_Compra" ColumnName="Fecha_Compra" />
+          <ScalarProperty Name="Monto_Total" ColumnName="Monto_Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

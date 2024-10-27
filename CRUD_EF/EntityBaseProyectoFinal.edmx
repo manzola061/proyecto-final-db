@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ModeloBaseProyectoFinal.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="Cedula_Cliente" />
+          </Key>
+          <Property Name="Cedula_Cliente" Type="int" Nullable="false" />
+          <Property Name="Nombre_Cliente" Type="nvarchar" MaxLength="30" />
+          <Property Name="Direccion_Cliente" Type="nvarchar" MaxLength="50" />
+          <Property Name="Telefono_Cliente" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Compras">
+          <Key>
+            <PropertyRef Name="ID_Compra" />
+          </Key>
+          <Property Name="ID_Compra" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Cedula_Cliente" Type="int" />
+          <Property Name="Fecha_Compra" Type="date" />
+          <Property Name="Monto_Total" Type="decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <Association Name="FK__Compras__Cedula___38996AB5">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+          <End Role="Compras" Type="Self.Compras" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="Cedula_Cliente" />
+            </Principal>
+            <Dependent Role="Compras">
+              <PropertyRef Name="Cedula_Cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ModeloBaseProyectoFinalStoreContainer">
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Compras" EntityType="Self.Compras" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Compras__Cedula___38996AB5" Association="Self.FK__Compras__Cedula___38996AB5">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Compras" EntitySet="Compras" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ModeloBaseProyectoFinal" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="Cedula_Cliente" />
+          </Key>
+          <Property Name="Cedula_Cliente" Type="Int32" Nullable="false" />
+          <Property Name="Nombre_Cliente" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Direccion_Cliente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Telefono_Cliente" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Compras" Relationship="Self.FK__Compras__Cedula___38996AB5" FromRole="Clientes" ToRole="Compras" />
+        </EntityType>
+        <EntityType Name="Compras">
+          <Key>
+            <PropertyRef Name="ID_Compra" />
+          </Key>
+          <Property Name="ID_Compra" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cedula_Cliente" Type="Int32" />
+          <Property Name="Fecha_Compra" Type="DateTime" Precision="0" />
+          <Property Name="Monto_Total" Type="Decimal" Precision="10" Scale="2" />
+          <NavigationProperty Name="Clientes" Relationship="Self.FK__Compras__Cedula___38996AB5" FromRole="Compras" ToRole="Clientes" />
+        </EntityType>
+        <Association Name="FK__Compras__Cedula___38996AB5">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+          <End Role="Compras" Type="Self.Compras" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="Cedula_Cliente" />
+            </Principal>
+            <Dependent Role="Compras">
+              <PropertyRef Name="Cedula_Cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BaseProyectoFinalEntitiesConexion" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+          <EntitySet Name="Compras" EntityType="Self.Compras" />
+          <AssociationSet Name="FK__Compras__Cedula___38996AB5" Association="Self.FK__Compras__Cedula___38996AB5">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Compras" EntitySet="Compras" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModeloBaseProyectoFinalStoreContainer" CdmEntityContainer="BaseProyectoFinalEntitiesConexion">
+          <EntitySetMapping Name="Clientes">
+            <EntityTypeMapping TypeName="ModeloBaseProyectoFinal.Clientes">
+              <MappingFragment StoreEntitySet="Clientes">
+                <ScalarProperty Name="Cedula_Cliente" ColumnName="Cedula_Cliente" />
+                <ScalarProperty Name="Nombre_Cliente" ColumnName="Nombre_Cliente" />
+                <ScalarProperty Name="Direccion_Cliente" ColumnName="Direccion_Cliente" />
+                <ScalarProperty Name="Telefono_Cliente" ColumnName="Telefono_Cliente" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Compras">
+            <EntityTypeMapping TypeName="ModeloBaseProyectoFinal.Compras">
+              <MappingFragment StoreEntitySet="Compras">
+                <ScalarProperty Name="ID_Compra" ColumnName="ID_Compra" />
+                <ScalarProperty Name="Cedula_Cliente" ColumnName="Cedula_Cliente" />
+                <ScalarProperty Name="Fecha_Compra" ColumnName="Fecha_Compra" />
+                <ScalarProperty Name="Monto_Total" ColumnName="Monto_Total" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

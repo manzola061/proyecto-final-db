@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModeloBaseProyectoFinal" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="Cedula_Cliente" />
+    </Key>
+    <Property Name="Cedula_Cliente" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Cliente" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Direccion_Cliente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Telefono_Cliente" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Compras" Relationship="Self.FK__Compras__Cedula___38996AB5" FromRole="Clientes" ToRole="Compras" />
+  </EntityType>
+  <EntityType Name="Compras">
+    <Key>
+      <PropertyRef Name="ID_Compra" />
+    </Key>
+    <Property Name="ID_Compra" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cedula_Cliente" Type="Int32" />
+    <Property Name="Fecha_Compra" Type="DateTime" Precision="0" />
+    <Property Name="Monto_Total" Type="Decimal" Precision="10" Scale="2" />
+    <NavigationProperty Name="Clientes" Relationship="Self.FK__Compras__Cedula___38996AB5" FromRole="Compras" ToRole="Clientes" />
+  </EntityType>
+  <Association Name="FK__Compras__Cedula___38996AB5">
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+    <End Role="Compras" Type="Self.Compras" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="Cedula_Cliente" />
+      </Principal>
+      <Dependent Role="Compras">
+        <PropertyRef Name="Cedula_Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BaseProyectoFinalEntitiesConexion" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+    <EntitySet Name="Compras" EntityType="Self.Compras" />
+    <AssociationSet Name="FK__Compras__Cedula___38996AB5" Association="Self.FK__Compras__Cedula___38996AB5">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="Compras" EntitySet="Compras" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

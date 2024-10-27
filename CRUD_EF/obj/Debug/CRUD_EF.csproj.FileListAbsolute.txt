@@ -1,0 +1,48 @@
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\bin\Debug\CRUD_EF.exe.config
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\bin\Debug\CRUD_EF.exe
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\bin\Debug\CRUD_EF.pdb
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\bin\Debug\EntityFramework.dll
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\bin\Debug\EntityFramework.SqlServer.dll
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\bin\Debug\EntityFramework.xml
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\bin\Debug\EntityFramework.SqlServer.xml
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.csproj.AssemblyReference.cache
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.Form1.resources
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.Properties.Resources.resources
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.csproj.GenerateResource.cache
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.csproj.CoreCompileInputs.cache
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.csproj.CopyComplete
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.exe
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.pdb
+D:\Desktop\Proyecto final C# (2)\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.Form2.resources
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\bin\Debug\CRUD_EF.exe.config
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\bin\Debug\CRUD_EF.exe
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\bin\Debug\CRUD_EF.pdb
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\bin\Debug\EntityFramework.dll
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\bin\Debug\EntityFramework.SqlServer.dll
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\bin\Debug\EntityFramework.xml
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\bin\Debug\EntityFramework.SqlServer.xml
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.csproj.AssemblyReference.cache
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.Form1.resources
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.Form2.resources
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.Properties.Resources.resources
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.csproj.GenerateResource.cache
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.csproj.CoreCompileInputs.cache
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.csproj.CopyComplete
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.exe
+D:\Desktop\Proyecto final C#\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.pdb
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\bin\Debug\CRUD_EF.exe.config
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\bin\Debug\CRUD_EF.exe
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\bin\Debug\CRUD_EF.pdb
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\bin\Debug\EntityFramework.dll
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\bin\Debug\EntityFramework.SqlServer.dll
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\bin\Debug\EntityFramework.xml
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\bin\Debug\EntityFramework.SqlServer.xml
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.csproj.AssemblyReference.cache
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.Form1.resources
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.Form2.resources
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.Properties.Resources.resources
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.csproj.GenerateResource.cache
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.csproj.CoreCompileInputs.cache
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.csproj.CopyComplete
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.exe
+D:\Downloads\Proyecto final DB\CRUD_EF\CRUD_EF\obj\Debug\CRUD_EF.pdb
