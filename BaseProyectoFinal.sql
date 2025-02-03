@@ -1,5 +1,4 @@
 CREATE DATABASE BaseProyectoFinal;
-USE BaseProyectoFinal;
 
 CREATE TABLE Clientes(
     Cedula_Cliente INT PRIMARY KEY,
@@ -15,6 +14,3 @@ CREATE TABLE Compras(
     Monto_Total DECIMAL(10, 2),
     FOREIGN KEY (Cedula_Cliente) REFERENCES Clientes(Cedula_Cliente)
 );
-
-SELECT * FROM Clientes;
-SELECT * FROM Compras;
