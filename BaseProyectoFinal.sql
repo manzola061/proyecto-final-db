@@ -1,3 +1,5 @@
+CREATE DATABASE BaseProyectoFinal;
+
 CREATE TABLE Clientes(
     Cedula_Cliente INT PRIMARY KEY,
     Nombre_Cliente NVARCHAR(30),
